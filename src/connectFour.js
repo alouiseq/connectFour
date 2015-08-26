@@ -1,4 +1,4 @@
-define(['angular', 'text!./connectFour.html', 'text!./connectFour.css', 'text!./sprites.css'], function (angular, connectFourTemplate, connectFourCss, spritesCss) {
+define(['angular', 'text!./connectFour.html', 'text!./connectFour.css', 'text!../bower_components/connectFour/src/sprites.css'], function (angular, connectFourTemplate, connectFourCss, spritesCss) {
 
     'use strict';
 
@@ -161,13 +161,13 @@ define(['angular', 'text!./connectFour.html', 'text!./connectFour.css', 'text!./
                                             // resolve which chip image to use
                                             if (currPlayer === 'red') {
                                                 cssImage = {
-                                                    "background-image": "url('scripts/src/sprites.png')",
+                                                    "background-image": "url('bower_components/connectFour/src/sprites.png')",
                                                     "background-position": "-14px -14px"
                                                 };
                                             }
                                             else if (currPlayer === 'yellow') {
                                                 cssImage = {
-                                                    "background-image": "url(scripts/src/sprites.png)",
+                                                    "background-image": "url(bower_components/connectFour/src/sprites.png)",
                                                     "background-position": "-151px -16px"
                                                 };
                                             }
@@ -407,6 +407,7 @@ define(['angular', 'text!./connectFour.html', 'text!./connectFour.css', 'text!./
 
                             if (confirm('Do you want to play again?')) {
                                 location.reload();
+                                // newGame(6, 7);
                             }
                             else {
                                 alert('Thanks for playing!');
@@ -417,6 +418,20 @@ define(['angular', 'text!./connectFour.html', 'text!./connectFour.css', 'text!./
                             newGame: newGame 
                         };
                     })();
+
+
+                    /*** INITIALIZE ***/
+
+                    // Keep initial state of game board
+                    var holdElem = document.getElementById('game-board');
+                    var initialState = holdElem.cloneNode(true);
+
+                    // Trigger a game restart on event
+                    // $('.restart').on('click', function () {
+                    //     // connectModule.newGame(6, 7);                        
+                    //     document.getElementById('game-board').remove();
+                    //     document.getElementById('connectFour').appendChild(initialState);
+                    // });
 
                     // Call methods
                     connectModule.newGame(6, 7);

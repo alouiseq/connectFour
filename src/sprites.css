@@ -1,5 +1,5 @@
 #connectFour .redarrow, .rsz_1yellow-arrow, .red-chip3, .yellow-chip{
-	background: url(scripts/src/sprites.png) no-repeat;
+	background: url(bower_components/connectFour/src/sprites.png) no-repeat;
 }
 
 #connectFour .redarrow{
