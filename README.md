@@ -1,7 +1,7 @@
 # Connect Four
-`Version 2`: Basic Connect Four game implementation written in plain Javascript.
+Basic Connect Four game implementation written in plain Javascript.
 
-This is a featured code that should be added to your application but could be modified to run as a stand alone application.
+`This is a featured code that should be added to your application but could be modified to run as a stand alone application.`
 
 ## Game Details
 ### Process:
