@@ -5,8 +5,8 @@ Basic Connect Four game implementation written in plain Javascript.
 
 ## Game Details
 ### Process:
-Build the board (6 rows X 7 columns)_
-Select color for player 1 and 2 (red or yellow)
+Build the board (6 rows X 7 columns)__
+Select color for player 1 and 2 (red or yellow)<br/>
 Keyboard keys
 spacebar: slide down chip
 left and right arrows: slide chip to desired column
