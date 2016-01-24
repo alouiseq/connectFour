@@ -5,29 +5,29 @@ Basic Connect Four game implementation written in plain Javascript.
 
 ## Game Details
 ### Process:
-Build the board (6 rows X 7 columns)__
+Build the board (6 rows X 7 columns)<br/>
 Select color for player 1 and 2 (red or yellow)<br/>
-Keyboard keys
-spacebar: slide down chip
-left and right arrows: slide chip to desired column
-Check for winner 
-4 adjacent chip in a row
-horizontal, vertical, or diagonal
-light up winner’s winning chips
-Option to play again if there’s a winner, or no winners
+Keyboard keys<br/>
+spacebar: slide down chip<br/>
+left and right arrows: slide chip to desired column<br/>
+Check for winner<br/>
+4 adjacent chip in a row <br/>
+horizontal, vertical, or diagonal<br/>
+light up winner’s winning chips<br/>
+Option to play again if there’s a winner, or no winners<br/>
 
 ### Functions:
-createBoard()
-params: none
-return: none
-assignColor()
-params: none
+createBoard()<br/>
+params: none<br/>
+return: none<br/>
+assignColor()<br/>
+params: none<br/>
 return: none
 
-moveChip()
-params: none
-return: none
-isWinner()
-params: none
+moveChip()<br/>
+params: none<br/>
+return: none<br/>
+isWinner()<br/>
+params: none<br/>
 return: none
 
