@@ -455,11 +455,6 @@ const main = () => {
 
 /*** INITIALIZE ***/
 
-// Dynamically add css to app
-// if ($('body>style').length === 0) {
-// $("body").prepend("<style>" + connectFourCss + spritesCss + "</style>");
-// }
-
 // Keep initial state of game board
 var holdElem = document.getElementById("game-board");
 var initialState = holdElem.cloneNode(true);
